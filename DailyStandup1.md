@@ -20,7 +20,8 @@
         - working on getting everyones data into one file(rtm/jira)
         - working on updating acceptance criteria and RTM
 - What blockers do you have  
-     - Nothing today
+     - We all want to review the recordings a little bit before writing our actual code for feature
+- Uploaded RTM (draft)
 
 
 
