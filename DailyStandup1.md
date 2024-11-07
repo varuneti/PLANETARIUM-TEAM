@@ -23,6 +23,14 @@
      - We all want to review the recordings a little bit before writing our actual code for feature
 - Uploaded RTM (draft)
 
+#### 11/7
+- What are you working on?
+     - Phase 1 and 2 of the project
+        - Almost done with this part just making sure everything looks good
+- What blockers do you have
+     - Suman is away today so we will get his input on phase 1/2 tomorrow 
+     - We all want to review the recordings a little bit before writing our actual code for feature
+
 
 
 
