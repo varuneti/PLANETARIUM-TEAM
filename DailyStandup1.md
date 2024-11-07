@@ -30,6 +30,7 @@
 - What blockers do you have
      - Suman is away today so we will get his input on phase 1/2 tomorrow 
      - We all want to review the recordings a little bit before writing our actual code for feature
+- remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
 
 
 
