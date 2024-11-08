@@ -32,6 +32,14 @@
      - We all want to review the recordings a little bit before writing our actual code for feature
 - remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
 
+#### 11/7
+- What are you working on?
+     - Phase 3 of the project as well as final touches on phase 2 (JIRA)
+        - pair programming today to write feature files
+- What blockers do you have
+     - none 
+- remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
+
 
 
 
