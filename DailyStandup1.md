@@ -35,10 +35,14 @@
 #### 11/7
 - What are you working on?
      - Phase 3 of the project as well as final touches on phase 2 (JIRA)
-        - pair programming today to write feature files
+          - Varun: Finishing moving everyones data into RTM and fixing gherkin syntax
+          - Malik: Finishing touches on Jira
+          - Pranav and Suman:
+     - Meet up after lunch to pair program and write feature files
 - What blockers do you have
-     - none 
-- remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
+     - Want to rewatch  
+- remember for future: Plain text password, split the dataset for creation/deletion of planets/moons, Malik TesCaseIdeas
+
 
 
 
