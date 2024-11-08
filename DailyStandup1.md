@@ -32,7 +32,7 @@
      - We all want to review the recordings a little bit before writing our actual code for feature
 - remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
 
-#### 11/7
+#### 11/8
 - What are you working on?
      - Phase 3 of the project as well as final touches on phase 2 (JIRA)
           - Varun: Finishing moving everyones data into RTM and fixing gherkin syntax
