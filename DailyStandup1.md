@@ -37,11 +37,23 @@
      - Phase 3 of the project as well as final touches on phase 2 (JIRA)
           - Varun: Finishing moving everyones data into RTM and fixing gherkin syntax
           - Malik: Finishing touches on Jira
-          - Pranav and Suman:
+          - Pranav and Suman: peer programming
      - Meet up after lunch to pair program and write feature files
 - What blockers do you have
      - Want to rewatch  
 - remember for future: Plain text password, split the dataset for creation/deletion of planets/moons, Malik TesCaseIdeas
+
+#### 11/11
+- What are you working on?
+     - Phase 3 of the project as well as final touches on phase 2 (JIRA)
+          - Varun: out sick
+          - Malik, Pranav and Suman: peer programming, figuring out registration feature files, registration step files, registration runner
+     - Meet up after lunch to pair program and write feature files, step, runner
+- What blockers do you have
+     - Want to rewatch
+     - interview prep
+     - Varun is out sick
+- remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
 
 
 
