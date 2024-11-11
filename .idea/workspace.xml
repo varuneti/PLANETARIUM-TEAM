@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cabca84-7c7d-4f37-93b6-f49fcb96af35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/poms/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/poms/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/poms/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/registrationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/registration/RegistrationUsernamePassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/shared/RegustrationUniqueRequirement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/RegistrationUniqueRequirement.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/UserRegistration.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,16 +43,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Feature: RegistrationUniqueRequirement.executor": "Run",
+    "Cucumber Java.Feature: UserRegistration.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "ptetali-test",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/Pteta/PLANETARIUM-TEAM/Registration-Unique-Username/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pteta\PLANETARIUM-TEAM\Registration-Unique-Username\src\test\resources\Features" />
+      <recent name="C:\Users\Pteta\PLANETARIUM-TEAM\Registration-Unique-Username\src\test\resources" />
+      <recent name="C:\Users\Pteta\PLANETARIUM-TEAM\Registration-Unique-Username\src\test\Features" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
