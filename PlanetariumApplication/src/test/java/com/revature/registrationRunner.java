@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(glue = "com.revature.steps", features = "classpath:Features", plugin = "pretty")
+@CucumberOptions(glue = "com.revature.steps", features = "classpath:features", plugin = "pretty")
 public class registrationRunner {
 
     public static WebDriver driver;

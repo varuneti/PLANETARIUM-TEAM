@@ -8,7 +8,8 @@ Feature: UserRegistration
 		When the user clicks the Registration button
 		When the user enters the username "<Username>"
 		And the user enters the password "<Password>"
-		Then Then an alert should appear "<Account Creation Result>"
+		And the user clicks the register button
+		Then Then an alert should appear "<Account Creation Result>" for "<Username>"
 		And The "<User redirected to login page result>"
 
 	Examples: 

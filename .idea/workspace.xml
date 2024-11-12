@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cabca84-7c7d-4f37-93b6-f49fcb96af35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/poms/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/poms/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/poms/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/registrationRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/registration/RegistrationUsernamePassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/shared/RegustrationUniqueRequirement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/RegistrationUniqueRequirement.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/UserRegistration.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/registration/RegistrationUsernamePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/registration/RegistrationUsernamePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/shared/RegustrationUniqueRequirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/shared/RegustrationUniqueRequirement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/RegistrationUniqueRequirement.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/RegistrationUniqueRequirement.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/UserRegistration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/UserRegistrationUsernamePassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/target/test-classes/com/revature/steps/registration/RegistrationSteps.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +39,7 @@
   "keyToString": {
     "Cucumber Java.Feature: RegistrationUniqueRequirement.executor": "Run",
     "Cucumber Java.Feature: UserRegistration.executor": "Run",
+    "JUnit.registrationRunner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "ptetali-test",
