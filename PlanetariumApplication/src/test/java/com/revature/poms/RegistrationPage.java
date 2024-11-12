@@ -33,7 +33,7 @@ public class RegistrationPage {
         registrationPasswordInput.sendKeys(password);
     }
 
-    public void clickRegistrationButton(){
+    public void clickRegisterButton(){
         registerButton.click();
     }
 }

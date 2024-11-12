@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cabca84-7c7d-4f37-93b6-f49fcb96af35" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/utility/Setup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/registration/RegistrationUsernamePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/registration/RegistrationUsernamePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/shared/RegustrationUniqueRequirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/java/com/revature/steps/shared/RegustrationUniqueRequirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/RegistrationUniqueRequirement.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/RegistrationUniqueRequirement.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/UserRegistration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Registration-Unique-Username/src/test/resources/Features/UserRegistrationUsernamePassword.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Registration-Unique-Username/target/test-classes/com/revature/steps/registration/RegistrationSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/poms/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/poms/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/registrationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/steps/registration/RegistrationUsernamePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/steps/registration/RegistrationUsernamePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/steps/shared/RegustrationUniqueRequirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/src/test/java/com/revature/steps/shared/RegustrationUniqueRequirement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/src/test/resources/Features/RegistrationUniqueRequirement.feature" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/src/test/resources/Features/RegistrationUniqueRequirement.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/src/test/resources/Features/UserRegistrationUsernamePassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/src/test/resources/Features/UserRegistrationUsernamePassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/target/test-classes/Features/RegistrationUniqueRequirement.feature" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/target/test-classes/Features/RegistrationUniqueRequirement.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/target/test-classes/com/revature/poms/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/target/test-classes/com/revature/poms/RegistrationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/target/test-classes/com/revature/steps/registration/RegistrationUsernamePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/target/test-classes/com/revature/steps/registration/RegistrationUsernamePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlanetariumApplication/target/test-classes/com/revature/steps/shared/RegustrationUniqueRequirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/PlanetariumApplication/target/test-classes/com/revature/steps/shared/RegustrationUniqueRequirement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +48,7 @@
   "keyToString": {
     "Cucumber Java.Feature: RegistrationUniqueRequirement.executor": "Run",
     "Cucumber Java.Feature: UserRegistration.executor": "Run",
+    "JUnit.TestRunner.executor": "Run",
     "JUnit.registrationRunner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -58,6 +68,28 @@
       <recent name="C:\Users\Pteta\PLANETARIUM-TEAM\Registration-Unique-Username\src\test\Features" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PlanetariumApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revature" />
+      <option name="MAIN_CLASS_NAME" value="com.revature.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestRunner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +105,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Registration-Unique-Username/src/main/java/org/example/Main.java</url>
+          <url>file://$PROJECT_DIR$/PlanetariumApplication/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

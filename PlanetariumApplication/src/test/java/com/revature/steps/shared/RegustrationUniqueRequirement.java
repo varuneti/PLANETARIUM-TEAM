@@ -1,5 +1,6 @@
 package com.revature.steps.shared;
 
+import com.revature.TestRunner;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -7,15 +8,13 @@ import io.cucumber.java.en.When;
 public class RegustrationUniqueRequirement {
 
     @Given("The user is on the login page at URL {string}")
-    public void the_user_is_on_the_login_page_at_URL(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void the_user_is_on_the_login_page_at_URL(String url) {
+        TestRunner.driver.get(url);
     }
 
    @When("the user clicks the Registration button")
     public void the_user_clicks_the_Registration_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        TestRunner.loginPage.clickRegistrationButton();
     }
 
 //    @When("The user enters the username {string}")
