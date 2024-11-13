@@ -66,6 +66,13 @@
      - mock interview session with Eric this afternoon
 - remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
 
-
-
-
+#### 11/13
+- What are you working on?
+     - Phase 3 of the project
+          - Varun, Malik, Pranav and Suman: peer programming, finish registration feature files, registration step files, registration runner
+     - Meet up after lunch to pair program and write feature files, step, runner
+- What blockers do you have
+     - Want to rewatch
+     - interview prep
+     - mock interview session with Eric this afternoon
+- remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
