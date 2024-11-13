@@ -1,6 +1,7 @@
 package com.revature.steps.registration;
 
 import com.revature.TestRunner;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -37,14 +38,15 @@ public class RegistrationUsernamePassword {
     }
 
     @Then("Then an alert should appear {string} for {string}")
-    public void then_an_alert_should_appear(String message, String docString) {
+    public void then_an_alert_should_appear(String message, String username) {
+        TestRunner.alertWait.until(ExpectedConditions.alertIsPresent());
         Alert alert = TestRunner.driver.switchTo().alert();
         String alertMessage = alert.getText();
         try{
             if(message.equals("user created")){
-                Assert.assertEquals("Account created successfully with username \"" + docString + "\"", alertMessage);
+                Assert.assertEquals("Account created successfully with username \"" + username + "\"", alertMessage);
             } else if (message.equals("User not created")) {
-                Assert.assertEquals("Account creation failed with username \"" + docString + "\"", alertMessage);
+                Assert.assertEquals("Account creation failed with username \"" + username + "\"", alertMessage);
             } else{
                 Assert.fail("Incorrect alert message produced: actual message: " + alertMessage);
             }
@@ -63,4 +65,8 @@ public class RegistrationUsernamePassword {
        }
     }
 
+    @And("the user clicks the register button")
+    public void theUserClicksTheRegisterButton() {
+        TestRunner.registrationPage.clickRegisterButton();
+    }
 }

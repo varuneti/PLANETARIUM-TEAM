@@ -9,7 +9,7 @@ Feature: RegistrationUniqueRequirement
 		When The user enters the username "<Username>"
 		When The user enters the password "<Password>"
 		And The user clicks the register button
-		And The user clicks the registration button
+		And The user clicks the Registration button
 		Then Then an alert should appear "<User Created>" for "<Username>"
 		And The "<User redirected to login page result>"
 

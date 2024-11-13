@@ -14,7 +14,7 @@ public class RegistrationPage {
     @FindBy(id = "usernameInput")
     private WebElement registrationUsernameInput;
 
-    @FindBy(id = "passwordinput")
+    @FindBy(id = "passwordInput")
     private WebElement registrationPasswordInput;
 
     @FindBy(xpath = "//form/input[3]")

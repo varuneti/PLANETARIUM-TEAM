@@ -28,7 +28,7 @@ public class TestRunner {
 
     @BeforeClass
     public static void setup(){
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         alertWait = new WebDriverWait(driver, Duration.ofSeconds(2));
         loginPage = new LoginPage(driver);
