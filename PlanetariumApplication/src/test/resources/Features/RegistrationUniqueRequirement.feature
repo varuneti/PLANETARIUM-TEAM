@@ -13,7 +13,7 @@ Feature: RegistrationUniqueRequirement
 		Then Then an alert should appear "<User Created>" for "<Username>"
 		And The "<User redirected to login page result>"
 
-	Examples: 
-		| Username | Password                       | User Created     | User redirected to login page result |
-		| Robin    | BatmanAndRobinToTheRescue20202 | User Created     | User redirected to login page        |
-		| Batman   | BatmanAndRobinToTheRescue20202 | User Not Created | User remains on creation page        |
+	Examples:
+		| Username | Password                       | User Created     | User redirected to login page result | Login Page URL         |
+		| Robin    | BatmanAndRobinToTheRescue20202 | User created     | User redirected to login page        | http://localhost:8080/ |
+		| Batman   | BatmanAndRobinToTheRescue20202 | User not created | User remains on creation page        | http://localhost:8080/ |

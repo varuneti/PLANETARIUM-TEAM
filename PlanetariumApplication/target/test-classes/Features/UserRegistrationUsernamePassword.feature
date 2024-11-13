@@ -13,7 +13,7 @@ Feature: UserRegistrationUsernamePassword
 		And The "<User redirected to login page result>"
 
 	Examples: 
-		| Login Page Url         | Username                        | Password                        | Account Creation Result | User redirected to login page |
+		| Login Page URL         | Username                        | Password                        | Account Creation Result | User redirected to login page result |
 		| http://localhost:8080/ | (no values)                     | (no values)                     | User Created            | User redirected to login page |
 		| http://localhost:8080/ | (no values)                     | GordonIsMyHeroForeverGoodMan11  | User Created            | User redirected to login page |
 		| http://localhost:8080/ | (no values)                     | LexLuthorIsSchemingAgainOhNo!!! | User Not Created        | User remains on creation page |
