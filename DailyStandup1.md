@@ -76,3 +76,11 @@
      - interview prep
      - mock interview session with Eric this afternoon
 - remember for future: Plain text password, split the dataset for creation/deletion of planets/moons
+
+#### 11/14
+- What are you working on?
+     - Final phase of the project
+          - Varun, Malik, Pranav and Suman: finish peer programming, uploading test results in Jira
+- What blockers do you have
+     - interview prep
+     - mock interview session with Eric this afternoon
