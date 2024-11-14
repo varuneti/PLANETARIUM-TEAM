@@ -45,7 +45,6 @@ public class RegistrationSteps {
            alert.accept();
            // here we tell driver to wait upto 2 seconds for the alert to be gone before continuing
            TestRunner.alertWait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
-
        }
 
 
