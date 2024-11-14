@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    private WebDriver driver;
+    private static WebDriver driver;
 
     @FindBy(id = "usernameInput")
     private WebElement loginUsernameInput;
@@ -37,9 +37,7 @@ public class LoginPage {
         loginButton.click();
     }
 
-
-
-
+    public static String getPageTitle(){return driver.getTitle();}
 
 
 }

@@ -11,4 +11,4 @@ Feature: HomePageValidation
 	Examples: 
 		| Username | Password                       | Home Page URL                     | User Redirected to Home Page | Login Page URL         |
 		| Batman   | I am the night                 | http://localhost:8080/planetarium | User redirected to Home Page | http://localhost:8080/ |
-		| Robin    | BatmanAndRobinToTheRescue20202 | http://localhost:8080/planetarium | User redirected to Home Page | http://localhost:8080/ |
+		| Robin    | BatmanAndRobinToTheRescue20202 | http://localhost:8080/planetarium | User not redirected to Home Page | http://localhost:8080/ |

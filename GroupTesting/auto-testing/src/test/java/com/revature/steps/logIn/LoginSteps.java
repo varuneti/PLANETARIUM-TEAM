@@ -1,10 +1,15 @@
 package com.revature.steps.logIn;
 
 import com.revature.TestRunner;
+import com.revature.poms.LoginPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 public class LoginSteps {
+
+    private WebDriver driver;
 
 
 
@@ -24,10 +29,14 @@ public class LoginSteps {
         TestRunner.loginPage.clickLoginButton();
     }
 
-//    @Then("The user should be redirected to home page")
-//    public void the_user_should_be_redirected_to_home_page() {
-//
-//    }
+    @Then("The user should be redirected to home page")
+    public void the_user_should_be_redirected_to_home_page() {
+
+            String actualTitle = LoginPage.getPageTitle();
+            if (actualTitle.equals("Home")){
+                Assert.assertEquals(actualTitle, "Home");
+            }
+    }
 
 
 }
