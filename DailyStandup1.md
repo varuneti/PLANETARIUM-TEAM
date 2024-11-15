@@ -84,3 +84,10 @@
 - What blockers do you have
      - interview prep
      - mock interview session with Eric this afternoon
+
+#### 11/15
+- What are you working on?
+     - Presenting our project
+          - Varun, Malik, Pranav and Suman: presenting
+- What blockers do you have
+     - none
