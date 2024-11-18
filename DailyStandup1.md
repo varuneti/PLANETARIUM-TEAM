@@ -4,6 +4,7 @@
 
 #### We discussed the following:
 
+### Sprint 2
 #### 11/5 
 - What are you working on?
      - Phase 1 of the project
@@ -91,3 +92,12 @@
           - Varun, Malik, Pranav and Suman: presenting
 - What blockers do you have
      - none
+
+### Sprint 3
+
+#### 11/15
+- What are you working on?
+     - Studying for interviews (Proceeding to work on Sprint 3 tomorrow)
+          - Varun, Malik, Pranav and Suman
+- What blockers do you have
+     - Interviews
