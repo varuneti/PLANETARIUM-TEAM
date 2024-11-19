@@ -101,3 +101,10 @@
           - Varun, Malik, Pranav and Suman
 - What blockers do you have
      - Interviews
+
+#### 11/16
+- What are you working on?
+     - Studying for interviews (Proceeding to work on Sprint 3 tomorrow)
+          - Varun, Malik, Pranav and Suman
+- What blockers do you have
+     - Interviews
