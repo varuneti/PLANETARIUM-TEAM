@@ -108,3 +108,13 @@
           - Varun, Malik, Pranav and Suman
 - What blockers do you have
      - Interviews
+
+#### 11/17
+- What are you working on?
+     - Phase 1 (Updating living documentation)
+     - Watch previous training videos 
+          - Malik, Pranav and Suman
+- What blockers do you have
+     - QC Assessment tomorrow
+     - Varun doesn't have power due to storm
+- remember for future: Finish use cases for Sprint 2 (If we have time)
