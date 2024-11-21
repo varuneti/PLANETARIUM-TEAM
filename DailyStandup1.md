@@ -118,3 +118,13 @@
      - QC Assessment tomorrow
      - Varun doesn't have power due to storm
 - remember for future: Finish use cases for Sprint 2 (If we have time)
+
+#### 11/18
+- What are you working on?
+     - Phase 2 and 3 (Test planning and test case development)
+     - Jira Board  
+          - Malik, Pranav and Suman
+- What blockers do you have
+     - QC Assessment today
+     - Varun doesn't have power due to storm
+- remember for future: Finish use cases for Sprint 2 (If we have time)
