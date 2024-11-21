@@ -13,12 +13,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Date;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
         glue = "com.revature.steps",
         features = "classpath:features",
-        plugin = {"pretty","json:src/test/resources/json-report.json", "html:target/cucumber-reports/html-report.html"}
+        plugin = {"pretty","j\"json:src/test/resources/json-reports.json", "html:target/cucumber-reports/html-report.html"}
 )
 public class TestRunner {
 
@@ -35,6 +36,7 @@ public class TestRunner {
         alertWait = new WebDriverWait(driver, Duration.ofSeconds(2));
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);
+
 
 
     }
