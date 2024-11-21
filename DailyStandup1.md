@@ -123,8 +123,9 @@
 - What are you working on?
      - Phase 2 and 3 (Test planning and test case development)
      - Jira Board  
-          - Malik, Pranav and Suman
+          - Malik, Pranav, Ishq and Suman
 - What blockers do you have
      - QC Assessment today
      - Varun doesn't have power due to storm
+     - Ishq doesn't have access to Jira and Github repo (Just added to the team)
 - remember for future: Finish use cases for Sprint 2 (If we have time)
