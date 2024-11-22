@@ -95,21 +95,21 @@
 
 ### Sprint 3
 
-#### 11/15
+#### 11/18
 - What are you working on?
      - Studying for interviews (Proceeding to work on Sprint 3 tomorrow)
           - Varun, Malik, Pranav and Suman
 - What blockers do you have
      - Interviews
 
-#### 11/16
+#### 11/19
 - What are you working on?
      - Studying for interviews (Proceeding to work on Sprint 3 tomorrow)
           - Varun, Malik, Pranav and Suman
 - What blockers do you have
      - Interviews
 
-#### 11/17
+#### 11/20
 - What are you working on?
      - Phase 1 (Updating living documentation)
      - Watch previous training videos 
@@ -119,7 +119,7 @@
      - Varun doesn't have power due to storm
 - remember for future: Finish use cases for Sprint 2 (If we have time)
 
-#### 11/18
+#### 11/21
 - What are you working on?
      - Phase 2 and 3 (Test planning and test case development)
      - Jira Board  
@@ -128,4 +128,14 @@
      - QC Assessment today
      - Varun doesn't have power due to storm
      - Ishq doesn't have access to Jira and Github repo (Just added to the team)
+- remember for future: Finish use cases for Sprint 2 (If we have time)
+
+#### 11/22
+- What are you working on?
+     - Phase 3 (Test case development) and interacting with POSTMAN
+          - Malik, Pranav, Ishq and Suman
+- What blockers do you have
+     - Varun doesn't have power due to storm
+     - Ishq doesn't have access to Jira and Github repo (Just added to the team)
+     - Studying for QC for next week
 - remember for future: Finish use cases for Sprint 2 (If we have time)
