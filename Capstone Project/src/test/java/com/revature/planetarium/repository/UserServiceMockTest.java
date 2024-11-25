@@ -10,10 +10,12 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.mockito.Mockito;
+import org.junit.After;
 
 import java.util.Optional;
 
 import static com.revature.planetarium.utility.JavalinSetup.userDao;
+//import com.revature.utility.Setup;
 
 public class UserServiceMockTest {
 
@@ -31,6 +33,7 @@ public class UserServiceMockTest {
         validPassword = "sideKick101";
         invalidUsername = "Batman";
         invalidPassword = "I am the night";
+        //Setup.main(new String[]{});
     }
 
 
@@ -42,6 +45,13 @@ public class UserServiceMockTest {
         user.setUsername(validUsername);
         user.setPassword(validPassword);
     }
+
+    /*
+    @After
+
+    public void posttest() {
+        Setup.main(new String[]{});
+    } */
 
     @Test
     public void createUserPositiveTest() {
@@ -60,5 +70,61 @@ public class UserServiceMockTest {
         String expectedResult = "Failed to create user, please try again";
         Assert.assertEquals(expectedResult, Actualresult);
     }
+
+    @Test
+    public void createEmptyUserNegativeTest() {
+        user = new User();
+        Optional<User> option = userDao.createUser(user);
+        Assert.assertTrue(option.isEmpty());
+    }
+
+    @Test
+    public void createUser0LengthNegativeTest() {
+        user.setUsername("");
+        Assert.assertThrows(UserFail.class, () -> {
+            userDao.createUser(user);
+        });
+    }
+
+    /*
+            Just needs whatever official 31 length username we use for tests
+    @Test
+    public void createUser31LengthNegativeTest() {
+        user.setUsername("INSERT USERNAME HERE");
+        Assert.assertThrows(UserFail.class, () -> {
+            userDao.createUser(user);
+        });
+    }
+    */
+
+    @Test
+    public void createUserPass0LengthNegativeTest() {
+        user.setPassword("");
+        Assert.assertThrows(UserFail.class, () -> {
+            userDao.createUser(user);
+        });
+    }
+
+    /*
+            Just needs whatever official 31 length password we use for tests
+    @Test
+    public void createUserPass31LengthNegativeTest() {
+        user.setPassword("INSERT PASSWORD HERE");
+        Assert.assertThrows(UserFail.class, () -> {
+            userDao.createUser(user);
+        });
+    }
+    */
+
+    /*
+            Just needs an existing username plugged in
+    @Test
+    public void createUserDupeNegativeTest() {
+        testUser.setUsername(INSERT EXISTING USERNAME);
+        Assert.assertThrows(UserFail.class, () -> {
+            userDao.createUser(testUser);
+        });
+    }
+    */
 
 }
