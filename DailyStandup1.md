@@ -139,3 +139,13 @@
      - Ishq doesn't have access to Jira and Github repo (Just added to the team)
      - Studying for QC for next week
 - remember for future: Finish use cases for Sprint 2 (If we have time)
+
+#### 11/25
+- What are you working on?
+     - Phase 5 (Test execution)
+          - Malik Ishq and Suman
+- What blockers do you have
+     - Varun and Pranav are absent today
+     - Ishq doesn't have full access to Github repo
+     - Studying for QC for tomorrow
+- remember for future: Finish use cases for Sprint 2 (If we have time)
