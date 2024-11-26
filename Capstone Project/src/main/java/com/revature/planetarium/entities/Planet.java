@@ -10,7 +10,17 @@ public class Planet {
     private String planetName;
     private int ownerId;
     private byte[] imageData;
-    
+
+    public Planet(int planetId, String planetName, int ownerId) {
+        this.planetId = planetId;
+        this.planetName = planetName;
+        this.ownerId = ownerId;
+    }
+
+    public Planet() {
+
+    }
+
     public int getPlanetId() {
         return planetId;
     }
