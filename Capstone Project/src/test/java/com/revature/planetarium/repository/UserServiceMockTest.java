@@ -24,8 +24,8 @@ public class UserServiceMockTest {
     private static String invalidUsername;
     private static String invalidPassword;
     private User user;
-    private UserDao userDao;
-    private UserService userService;
+    private UserDao userDaoImp;
+    private UserService service;
 
     @BeforeClass
     public static void setup(){
@@ -39,8 +39,8 @@ public class UserServiceMockTest {
 
     @Before
     public void pretest() {
-        userDao = Mockito.mock(UserDao.class);
-        userService = new UserServiceImp(userDao);
+        userDaoImp = Mockito.mock(UserDao.class);
+        service = new UserServiceImp(userDaoImp);
         user = new User();
         user.setUsername(validUsername);
         user.setPassword(validPassword);
@@ -55,76 +55,82 @@ public class UserServiceMockTest {
 
     @Test
     public void createUserPositiveTest() {
-        Mockito.when(userDao.createUser(user)).thenReturn(Optional.of(user));
-        String Actualresult = userService.createUser(user);
+        Mockito.when(userDaoImp.createUser(user)).thenReturn(Optional.of(user));
+        String Actualresult = service.createUser(user);
         String expectedResult = "Created user with username " + validUsername + " and password " + validPassword;;
         Assert.assertEquals(expectedResult, Actualresult);
     }
 
     @Test
-    public void createUserNegativeTest() {
-        user.setUsername(invalidUsername);
-        user.setPassword(invalidPassword);
-        Mockito.when(userDao.createUser(user)).thenReturn(Optional.of(user));
-        String Actualresult = userService.createUser(user);
-        String expectedResult = "Failed to create user, please try again";
-        Assert.assertEquals(expectedResult, Actualresult);
-    }
-
-    @Test
-    public void createEmptyUserNegativeTest() {
-        user = new User();
-        Optional<User> option = userDao.createUser(user);
-        Assert.assertTrue(option.isEmpty());
-    }
-
-    @Test
     public void createUser0LengthNegativeTest() {
         user.setUsername("");
-        Assert.assertThrows(UserFail.class, () -> {
-            userDao.createUser(user);
+        UserFail failed = Assert.assertThrows(UserFail.class, () -> {
+            service.createUser(user);
         });
+        Assert.assertEquals("Username must be between 1 and 30 characters", failed.getMessage());
     }
 
-    /*
-            Just needs whatever official 31 length username we use for tests
     @Test
     public void createUser31LengthNegativeTest() {
-        user.setUsername("INSERT USERNAME HERE");
-        Assert.assertThrows(UserFail.class, () -> {
-            userDao.createUser(user);
+        user.setUsername("This username is way to long to use for this");
+        UserFail failed = Assert.assertThrows(UserFail.class, () -> {
+            service.createUser(user);
         });
+        Assert.assertEquals("Username must be between 1 and 30 characters", failed.getMessage());
     }
-    */
 
     @Test
     public void createUserPass0LengthNegativeTest() {
         user.setPassword("");
-        Assert.assertThrows(UserFail.class, () -> {
-            userDao.createUser(user);
+        UserFail failed = Assert.assertThrows(UserFail.class, () -> {
+            service.createUser(user);
         });
+        Assert.assertEquals("Password must be between 1 and 30 characters", failed.getMessage());
     }
 
-    /*
-            Just needs whatever official 31 length password we use for tests
     @Test
     public void createUserPass31LengthNegativeTest() {
-        user.setPassword("INSERT PASSWORD HERE");
-        Assert.assertThrows(UserFail.class, () -> {
-            userDao.createUser(user);
+        user.setPassword("This password is way to long to use for this");
+        UserFail failed = Assert.assertThrows(UserFail.class, () -> {
+            service.createUser(user);
         });
+        Assert.assertEquals("Password must be between 1 and 30 characters", failed.getMessage());
     }
-    */
 
-    /*
-            Just needs an existing username plugged in
     @Test
     public void createUserDupeNegativeTest() {
-        testUser.setUsername(INSERT EXISTING USERNAME);
-        Assert.assertThrows(UserFail.class, () -> {
-            userDao.createUser(testUser);
+        user.setUsername("Batman");
+        Mockito.when(userDaoImp.findUserByUsername(user.getUsername())).thenReturn(Optional.of(user));
+        UserFail failed = Assert.assertThrows(UserFail.class, () -> {
+            service.createUser(user);
         });
+        Assert.assertEquals("Username is already in use", failed.getMessage());
     }
-    */
 
+    @Test
+    public void loginUserPositiveTest() {
+        Mockito.when(userDaoImp.findUserByUsername(user.getUsername())).thenReturn(Optional.of(user));
+        User actualUser = service.authenticate(user);
+        Assert.assertEquals(user, actualUser);
+    }
+
+    @Test
+    public void loginBadUserNegativeTest() {
+        Mockito.when(userDaoImp.findUserByUsername(user.getUsername())).thenReturn(Optional.empty());
+        UserFail failed = Assert.assertThrows(UserFail.class, () -> {
+            service.authenticate(user);
+        });
+        Assert.assertEquals("Username and/or password do not match", failed.getMessage()); 
+    }
+
+    @Test
+    public void loginBadPassNegativeTest() {
+        User testUser = new User();
+        testUser.setPassword("My Birthday");
+        Mockito.when(userDaoImp.findUserByUsername(user.getUsername())).thenReturn(Optional.of(testUser));
+        UserFail failed = Assert.assertThrows(UserFail.class, () -> {
+            service.authenticate(user);
+        });
+        Assert.assertEquals("Username and/or password do not match", failed.getMessage());
+    }
 }

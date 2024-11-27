@@ -36,7 +36,6 @@ public class PlanetServiceMockTest {
         validGetPlanetName = "Earth";
         validGetPlanetData = new Planet(1, "Earth", 1);
         invalidGetPlanetName = "Saturn";
-
     }
 
     @Before
@@ -47,59 +46,53 @@ public class PlanetServiceMockTest {
 
         planet = new Planet();
     }
-/*
+
     @Test
     public void createPlanetPositiveTest() {
-        setPlanetName("Pluto");
-        try {
-            Optional<Planet> actual = planetDaoImp.createPlanet(planet);
-            Assert.assertEquals(actual.get(), planet);
-        } catch(Exception e) {
-            Assert.fail("Failed to create planet");
-        }
+        planet.setPlanetName("Pluto");
+        Mockito.when(planetDaoImp.readPlanet(planet.getPlanetName())).thenReturn(Optional.empty());
+        Mockito.when(planetDaoImp.createPlanet(planet)).thenReturn(Optional.of(planet));
+        Planet actual = service.createPlanet(planet);
+        Assert.assertEquals(actual, planet);
     }
-*/
+
     @Test
     public void createPlanet0LengthNegativeTest() {
         planet.setPlanetName("");
-Assert.assertThrows(PlanetFail.class, () -> {
+        Assert.assertThrows(PlanetFail.class, () -> {
             service.createPlanet(planet);
         });
     }
-/*
+
     @Test
-    public void createPlanet31LengthNegativeTest() {
-        setPlanetName("INSERT LONG PLANET NAME HERE IDK");
-        try {
-            Optional<Planet> actual = planetTest.createPlanet(planet);
-            Assert.assertEquals(actual.get(), Optional.empty());
-        } catch (Exception e) {
-            Assert.fail("Is throwing a SQLiteException; should also be returning an empty Optional. Source code should be catching it");
-        }
+    public void createPlanet30PlusLengthTest() {
+        planet.setPlanetName("Insert Super Long Name Planet Here");
+        Assert.assertThrows(PlanetFail.class, () -> {
+            service.createPlanet(planet);
+        });
     }
 
- */
     @Test
     public void createPlanetDupeNegativeTest() {
         planet.setPlanetName("Pluto");
         Mockito.when(planetDaoImp.readPlanet(planet.getPlanetName())).thenReturn(Optional.empty());
         Mockito.when(planetDaoImp.createPlanet(planet)).thenReturn(Optional.of(planet));
-
         Planet actual = service.createPlanet(planet);
-
         Assert.assertEquals(actual, planet);
     }
 
-    /*
-            Idk about this one
     @Test
-    public void deletePlanet() {
-        setPlanetName("Evil Pluto");
-        planetID = 1;
-        Optional<Planet> created = planetTest.createPlanet(planet);
-        int planetID = created.get().getPlanetId();
-        Assert.assertTrue(planetTest.deletePlanet(planetID));
+    public void deletePlanetPositiveTest() {
+        String planetName = "Mars";
+        String expectedResult = "Planet deleted successfully";
+        Mockito.when(planetDaoImp.deletePlanet(planetName)).thenReturn(true);
+        Assert.assertEquals(service.deletePlanet(planetName), expectedResult);
     }
-    */
 
+    @Test
+    public void deletePlanetNegativeTest() {
+        String planetName = "Evil Pluto";
+        Mockito.when(planetDaoImp.deletePlanet(planetName)).thenReturn(false);
+        Assert.assertThrows(PlanetFail.class, () -> service.deletePlanet(planetName));
+    }
 }
