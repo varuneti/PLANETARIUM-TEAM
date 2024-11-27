@@ -149,3 +149,13 @@
      - Ishq doesn't have full access to Github repo
      - Studying for QC for tomorrow
 - remember for future: Finish use cases for Sprint 2 (If we have time)
+
+#### 11/26
+- What are you working on?
+     - Phases 5 and 6(Test execution and close)
+          - Malik, Pranav, Ishq and Suman
+     - Project Presentation
+- What blockers do you have
+     - Varun still absent today
+     - Ishq doesn't have full access to Github repo
+     - QC today
